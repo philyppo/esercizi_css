@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: cursive;
-}
-
 a {
   text-decoration: none;
   color: gray;
@@ -19,9 +15,10 @@ a {
 
 li {
   list-style: none;
- 
+
   border-right: 1px solid;
   text-decoration: none;
+  margin-top: 1px;
 }
 
 .navbar {
@@ -29,9 +26,8 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: black;
+  background-color: rgb(48, 41, 41);
   color: white;
-  
 }
 
 .nav-links a {
@@ -44,8 +40,8 @@ li {
   display: flex;
   gap: 1em;
   font-size: 18px;
-   background-color: #212121;
-   border-radius: 5px;
+  background-color: #212121;
+  border-radius: 5px;
 }
 
 .menu li:hover {
@@ -56,8 +52,6 @@ li {
 
 .menu li {
   padding: 5px 14px;
-
- 
 }
 
 /* Dropdown menu */
@@ -71,38 +65,69 @@ li {
   position: absolute;
   display: none;
   border-radius: 8px;
-  top: 35px; background-color: #212121; 
-   
+  top: 35px;
+  background-color: #212121;
 }
 
 .dropdown li + li {
   margin-top: 10px;
-   
 }
 
 .dropdown li {
   padding: 0.5em 1em;
   width: 8em;
   text-align: center;
-   
 }
 
 .dropdown li:hover {
   background-color: #3a3a3a;
-   
 }
 
 .services:hover .dropdown {
   display: block;
 }
 
-
-.btn button:hover{
-    background-color: green;
-    color: white;
-    font-weight: bold;
-
+.container {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
 }
+
+.container input {
+  width: 250px;
+  height: 30px;
+  background-color: #212121;
+  color: antiquewhite;
+  border: 1px solid;
+  font-size: 10pt;
+  float: left;
+  padding-left: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container input:hover {
+  background-color: green;
+  font-weight: bold;
+}
+
+/* .structural {
+  position: absolute;
+  left: -9999px;
+  border-radius: 5px;
+}
+
+.btn input {
+  border-radius: 5px;
+  border: 5px solid #3a3a3a;
+}
+
+.btn:hover {
+  background-color: green;
+  color: white;
+} */
 
 /* responsive navbar menu  */
 
@@ -125,19 +150,17 @@ input[type="checkbox"] {
   .menu {
     display: none;
     position: absolute;
-   
+
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
-    
   }
 
   .menu li:hover {
     display: inline-block;
     background-color: #4c9e9e;
     transition: 0.2s ease;
-    
   }
 
   .menu li + li {
